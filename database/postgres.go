@@ -4,7 +4,10 @@ import (
 	"context"
 	"database/sql"
 	"log"
+
 	"rest-ws/models"
+
+	_ "github.com/lib/pq"
 )
 
 type PostgresRepository struct {
