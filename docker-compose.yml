@@ -1,0 +1,9 @@
+services:
+  db_dev_rest_api:
+    image: postgres:15
+    container_name: db_dev_container
+    environment:
+      POSTGRES_DB: db_dev
+      POSTGRES_PASSWORD: secret
+    ports:
+      - 5432:5432
